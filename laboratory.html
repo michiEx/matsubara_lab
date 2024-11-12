@@ -1,15 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="ja">
 <head>
-<title>研究室紹介 | 北海道大学 大学院情報科学研究院 構造化知能研究室</title>
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="format-detection" content="telephone=no">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="author" content="templatesjungle">
-<meta name="keywords" content="website template">
-<meta name="description" content="website template">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>研究室紹介 | 北海道大学 大学院情報科学研究院 構造化知能研究室</title>
+<meta name="description" content="北海道大学 大学院情報科学研究院 構造化知能研究室のWebサイトです">
 
 <!--Bootstrap ================================================== -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,41 +13,44 @@
 <!--Font Awesome ================================================== -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<!-- Style Sheet ================================================== -->
+<!--AOS ================================================== -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- Original ================================================== -->
 <link rel="stylesheet" type="text/css" href="css/style.css">
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.png">
 </head>
 
 <body>
-<header id="header" class="fixed-top">
-  <div class="header-top">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-center py-4"> <a class="navbar-brand" href="index.html"><img class="logo img-fluid" src="images/site-logo-ja.svg" alt="北海道大学 大学院情報科学研究院 情報理工学部門 数理科学分野 構造化知能研究室" width="" height="" /></a>
-        <div class="d-flex flex-wrap justify-content-end align-items-center m-0">
+<header id="header">
+  <div class="container">
+    <div id="header-top">
+	  <a class="navbar-brand" href="index.html"><img class="logo" src="images/site-logo-ja.svg" alt="北海道大学 大学院情報科学研究院 情報理工学部門 数理科学分野 構造化知能研究室" width="" height="" /></a>
+        <div class="lang-switcher-wrapper">
           <div class="lang-switcher"> <a href="index-en.html"><span>EN</span></a> <a href="/" class="current"><span>JP</span></a> </div>
-        </div>
       </div>
     </div>
   </div>
-  <nav id="primary-header" class="navbar navbar-expand py-0 py-md-3">
-    <div class="container d-flex justify-content-center justify-content-lg-end">
-      <div class="align-items-center justify-content-center">
-        <ul class="navbar-nav mb-1 mb-lg-0">
-          <li class="nav-item px-1 px-sm-2 px-md-3 py-0 d-none d-sm-block"> <a class="nav-link p-0" href="index.html">Home</a> </li>
-          <li class="nav-item px-1 px-sm-2 px-md-3 py-0"> <a class="nav-link p-0" href="research/index.html">研究内容</a> </li>
-          <li class="nav-item px-1 px-sm-2 px-md-3 py-0"> <a class="nav-link p-0" href="achievements.html">研究業績</a> </li>
-          <li class="nav-item px-1 px-sm-2 px-md-3 py-0"> <a class="nav-link p-0" href="members.html">メンバー</a> </li>
-          <li class="nav-item px-1 px-sm-2 px-md-3 py-0"> <a class="nav-link active p-0" href="laboratory.html">研究室紹介</a> </li>
-          <li class="nav-item px-1 px-sm-2 ps-md-3 pe-lg-0 py-0"> <a class="nav-link p-0" href="contact.html">お問合せ</a> </li>
+  <nav id="header-nav" class="navbar navbar-expand">
+    <div class="container">
+        <ul class="navbar-nav">
+          <li class="nav-item d-none d-sm-block"> <a class="nav-link" href="index.html">Home</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="research/index.html">研究内容</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="achievements.html">研究業績</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="members.html">メンバー</a> </li>
+          <li class="nav-item"> <a class="nav-link active" href="laboratory.html">研究室紹介</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="contact.html">お問合せ</a> </li>
         </ul>
-      </div>
-    </div>
-    </div>
+     </div>
   </nav>
 </header>
 
-<!-- home-main -->
-<section id="page-title">
-  <div class="page-title-image d-flex align-items-center">
+<!-- main-header-page -->
+<section id="main-header-page">
+  <div class="main-header-page-image">
     <div class="container">
       <div class="page-title-intro">
         <h1>研究室紹介</h1>
@@ -66,10 +64,10 @@
   <div class="container">
     <h2>最先端のAI開発のために，数学や物理の知識を応用します</h2>
    <div class="row">
-    <div class="col-lg-9">
+    <div class="col-lg-8">
     <p>当研究グループは解析力学や微分幾何学といった数理に基づき，深層学習を中心とした新しいAI技術を開発しています． 例えば，高速な計算機シミュレーションを実現するAIシミュレータ，テキストに則した画像を作る生成AIなど，理論解析から直接社会に役立つ応用まで幅広い領域をカバーしています． 詳しくは<a href="research/index.html">研究紹介</a>をご覧ください．卒業生については<a href="achievements.html">学位論文（博士論文・修士論文・学士論文）</a>をご参照ください．</p>
     <p>卒業後の就職先はIT系，コンサルティングファーム，電機メーカーなど多様です．研究分野のニーズが大きいため，様々な業界にチャレンジできます（建築会社のDX部門に就職した事例もあります）．</p></div>
-    <div class="col-lg-3 order-lg-first"> <img src="images/room.jpg" width="" height="" class="img-fluid" alt=""> </div>
+    <div class="col-lg-4 order-lg-first"> <img src="images/room.jpg" width="" height="" class="img-fluid" alt=""> </div>
    </div>
    <div class="row pt-5">
     <div class="col-lg-9">
@@ -86,11 +84,11 @@
 <section id="page-sub" class="padding-small bg-secondary">
   <div class="container">
    <div class="row">
-    <div class="col-lg-9">
+    <div class="col-lg-8">
 	<h2>スタッフを募集しています</h2>
 	<p><a href="https://jrecin.jst.go.jp/seek/SeekJorDetail?id=D124071656" target="_blank">准教授(任期なし)を公募しています</a>． 要項の通り「計算科学、数値解析、力学系理論、ベイズ統計学、状態空間モデル」などの数理科学領域と機械学習を組み合わせることに積極的な方を募集しています． すでにそういった実績がある必要はなく，例えば，制御工学の専門家だが今後機械学習を取り入れてデータ駆動的な制御を考えられている方，コンピュータビジョンの専門家だが今後力学系理論を取り入れて動画の生成や実空間への応用を考えている方なども歓迎します．</p>
 	<p>同様の領域で，博士研究員・特任助教などを採用できる可能性もありますので，ご興味がございましたら松原までご連絡ください．</p></div>
-    <div class="col-lg-3 order-lg-first pb-sm-3"> <img src="images/pickup03.jpg" width="" height="" class="img-fluid" alt=""> </div>
+    <div class="col-lg-4 order-lg-first pb-sm-3"> <img src="images/pickup03.jpg" width="" height="" class="img-fluid" alt=""> </div>
    </div>
   </div>
 </section>
@@ -108,28 +106,11 @@
     </div>
   </div>
 </footer>
-<p id="page-top"><a href="#"><i class="fa fa-chevron-up p-0"></i></a></p>
-<script src="js/jquery-1.11.0.min.js"></script> 
-<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script> 
+<p id="page-top"><a href="#"><i class="fa fa-chevron-up"></i></a></p>
+<!-- JS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
 <script type="text/javascript" src="js/jquery.3.7.1.js"></script> 
-
-<!-- javascript --> 
-<script>
-$(function(){
-  var pagetop = $('#page-top');
-  pagetop.hide();
-  $(window).scroll(function () {
-     if ($(this).scrollTop() > 100) {
-          pagetop.fadeIn();
-     } else {
-          pagetop.fadeOut();
-     }
-  });
-  pagetop.click(function () {
-     $('body, html').animate({ scrollTop: 0 }, 500);
-     return false;
-  });
-});
-</script>
+<script type="text/javascript" src="js/custom.js"></script>
 </body>
 </html>

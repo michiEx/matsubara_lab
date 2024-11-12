@@ -1,15 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="ja">
 <head>
-<title>お問合せ | 北海道大学 大学院情報科学研究院 構造化知能研究室</title>
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="format-detection" content="telephone=no">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="author" content="templatesjungle">
-<meta name="keywords" content="website template">
-<meta name="description" content="website template">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>お問合せ | 北海道大学 大学院情報科学研究院 構造化知能研究室</title>
+<meta name="description" content="北海道大学 大学院情報科学研究院 構造化知能研究室のWebサイトです">
 
 <!--Bootstrap ================================================== -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,41 +13,44 @@
 <!--Font Awesome ================================================== -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<!-- Style Sheet ================================================== -->
+<!--AOS ================================================== -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- Original ================================================== -->
 <link rel="stylesheet" type="text/css" href="css/style.css">
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.png">
 </head>
 
 <body>
-<header id="header" class="fixed-top">
-  <div class="header-top">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-center py-4"> <a class="navbar-brand" href="index.html"><img class="logo img-fluid" src="images/site-logo-ja.svg" alt="北海道大学 大学院情報科学研究院 情報理工学部門 数理科学分野 構造化知能研究室" width="" height="" /></a>
-        <div class="d-flex flex-wrap justify-content-end align-items-center m-0">
+<header id="header">
+  <div class="container">
+    <div id="header-top">
+	  <a class="navbar-brand" href="index.html"><img class="logo" src="images/site-logo-ja.svg" alt="北海道大学 大学院情報科学研究院 情報理工学部門 数理科学分野 構造化知能研究室" width="" height="" /></a>
+        <div class="lang-switcher-wrapper">
           <div class="lang-switcher"> <a href="index-en.html"><span>EN</span></a> <a href="/" class="current"><span>JP</span></a> </div>
-        </div>
       </div>
     </div>
   </div>
-  <nav id="primary-header" class="navbar navbar-expand py-0 py-md-3">
-    <div class="container d-flex justify-content-center justify-content-lg-end">
-      <div class="align-items-center justify-content-center">
-        <ul class="navbar-nav mb-1 mb-lg-0">
-          <li class="nav-item px-1 px-sm-2 px-md-3 py-0 d-none d-sm-block"> <a class="nav-link p-0" href="index.html">Home</a> </li>
-          <li class="nav-item px-1 px-sm-2 px-md-3 py-0"> <a class="nav-link p-0" href="research/index.html">研究内容</a> </li>
-          <li class="nav-item px-1 px-sm-2 px-md-3 py-0"> <a class="nav-link p-0" href="achievements.html">研究業績</a> </li>
-          <li class="nav-item px-1 px-sm-2 px-md-3 py-0"> <a class="nav-link p-0" href="members.html">メンバー</a> </li>
-          <li class="nav-item px-1 px-sm-2 px-md-3 py-0"> <a class="nav-link p-0" href="laboratory.html">研究室紹介</a> </li>
-          <li class="nav-item px-1 px-sm-2 ps-md-3 pe-lg-0 py-0"> <a class="nav-link active p-0" href="contact.html">お問合せ</a> </li>
+  <nav id="header-nav" class="navbar navbar-expand">
+    <div class="container">
+        <ul class="navbar-nav">
+          <li class="nav-item d-none d-sm-block"> <a class="nav-link" href="index.html">Home</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="research/index.html">研究内容</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="achievements.html">研究業績</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="members.html">メンバー</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="laboratory.html">研究室紹介</a> </li>
+          <li class="nav-item"> <a class="nav-link active" href="contact.html">お問合せ</a> </li>
         </ul>
-      </div>
-    </div>
-    </div>
+     </div>
   </nav>
 </header>
 
-<!-- home-main -->
-<section id="page-title">
-  <div class="page-title-image d-flex align-items-center">
+<!-- main-header-page -->
+<section id="main-header-page">
+  <div class="main-header-page-image">
     <div class="container">
       <div class="page-title-intro">
         <h1>お問合せ</h1>
@@ -136,28 +134,11 @@
     </div>
   </div>
 </footer>
-<p id="page-top"><a href="#"><i class="fa fa-chevron-up p-0"></i></a></p>
-<script src="js/jquery-1.11.0.min.js"></script> 
-<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script> 
+<p id="page-top"><a href="#"><i class="fa fa-chevron-up"></i></a></p>
+<!-- JS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
 <script type="text/javascript" src="js/jquery.3.7.1.js"></script> 
-
-<!-- javascript --> 
-<script>
-$(function(){
-  var pagetop = $('#page-top');
-  pagetop.hide();
-  $(window).scroll(function () {
-     if ($(this).scrollTop() > 100) {
-          pagetop.fadeIn();
-     } else {
-          pagetop.fadeOut();
-     }
-  });
-  pagetop.click(function () {
-     $('body, html').animate({ scrollTop: 0 }, 500);
-     return false;
-  });
-});
-</script>
+<script type="text/javascript" src="js/custom.js"></script>
 </body>
 </html>
