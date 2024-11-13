@@ -633,6 +633,11 @@ a.nav-link:hover::after {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 576px) {
+  .page-header-image {
+    min-height: 140px;
+  }
+}
 .page-header-image::before {
   content: '';
   background-color: rgb(0 0 0 / 0.2);
