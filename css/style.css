@@ -459,7 +459,7 @@ a.nav-link:hover::after {
   }
 }
 
-@media screen and (max-width: 456px) {
+@media screen and (max-width: 456.98px) {
   .logo {
     height: 40px;
   }
@@ -471,7 +471,7 @@ a.nav-link:hover::after {
   }
 }
 	
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 376.98px) {
   .lang-switcher > a {
     font-size: 11px;
   }
