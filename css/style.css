@@ -360,10 +360,6 @@ z-index: 2;
   height: 2em;
   text-decoration: none;
 }
-/* small */
-.lang-switcher > a.small {
-  font-size: 11px;
-}
 .lang-switcher > a span {
   padding: 0;
 }
