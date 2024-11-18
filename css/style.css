@@ -316,12 +316,12 @@ z-index: 2;
   width: auto;
   height: 60px;
   padding-right: 0.5em;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 /* small */
 .logo.small {
   height: 46px;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 .lang-switcher-wrapper {
