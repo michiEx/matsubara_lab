@@ -8,13 +8,6 @@ $(function(){
       $("img").removeClass("small");
     }
   });
-  $(window).scroll(function(){
-    if($(window).scrollTop() > 50){
-      $("a").addClass("small");
-    }else{
-      $("a").removeClass("small");
-    }
-  });
 });
 
 $(function(){
