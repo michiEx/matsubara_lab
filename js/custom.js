@@ -8,6 +8,13 @@ $(function(){
       $("img").removeClass("small");
     }
   });
+  $(window).scroll(function(){
+    if($(window).scrollTop() > 200){
+      $("a").addClass("small");
+    }else{
+      $("a").removeClass("small");
+    }
+  });
 });
 
 $(function(){
@@ -21,7 +28,7 @@ $(function(){
      }
   });
   pagetop.click(function () {
-     $('body, html').animate({ scrollTop: 0 }, 500);
+     $('body, html').animate({ scrollTop: 0 }, 300);
      return false;
   });
 });// JavaScript Document
