@@ -2,14 +2,14 @@ AOS.init();
 
 $(function(){
   $(window).scroll(function(){
-    if($(window).scrollTop() > 100){
+    if($(window).scrollTop()){
       $("img").addClass("small");
     }else{
       $("img").removeClass("small");
     }
   });
   $(window).scroll(function(){
-    if($(window).scrollTop() > 100){
+    if($(window).scrollTop()){
       $("a").addClass("small");
     }else{
       $("a").removeClass("small");
