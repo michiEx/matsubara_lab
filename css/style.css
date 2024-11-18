@@ -321,6 +321,7 @@ z-index: 2;
 /* small */
 .logo.small {
   height: 46px;
+  transition: all 0.3s;
 }
 
 .lang-switcher-wrapper {
