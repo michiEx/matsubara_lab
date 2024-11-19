@@ -2,9 +2,9 @@ AOS.init();
 
 $(function(){
   $(window).scroll(function(){
-    if($(window).scrollTop() > 50){
+    if($(window).scrollTop() > 200){
       $("img").addClass("small");
-    }else{
+    }else if($(window).scrollTop() < 100){
       $("img").removeClass("small");
     }
   });
